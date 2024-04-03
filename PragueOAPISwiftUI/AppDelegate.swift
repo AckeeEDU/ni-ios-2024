@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = RootViewController()
+        window?.raaaaootViewController = RootViewController()
         window?.makeKeyAndVisible()
         
         return true
