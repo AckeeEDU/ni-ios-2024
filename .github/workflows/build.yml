@@ -17,4 +17,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Tests
-        run: xcodebuild test -scheme PragueOAPISwiftUI -destination "name=iPhone 13 Pro Max"
+        run: |
+          xcrun simctl create "iPhone 13 Pro Max" "iPhone 13 Pro Max"
+          xcodebuild test -scheme PragueOAPISwiftUI -destination "name=iPhone 13 Pro Max"
