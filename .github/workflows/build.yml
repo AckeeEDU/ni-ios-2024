@@ -19,4 +19,4 @@ jobs:
       - name: Tests
         run: |
           xcrun simctl create "iPhone 13 Pro Max" "iPhone 13 Pro Max"
-          xcodebuild test -scheme PragueOAPISwiftUI -destination "name=iPhone 13 Pro Max"
+          xcodebuild test -scheme PragueOAPISwiftUI -destination "name=iPhone 13 Pro Max" -resultBundlePath "Tests.xcresult"
