@@ -6,19 +6,19 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: macos-13
+    runs-on: macos-14
     steps:
       - uses: actions/checkout@v4
       - name: Build
         run: |
-          sudo xcode-select -s /Applications/Xcode_15.2.app
+          sudo xcode-select -s /Applications/Xcode_15.3.app
           xcodebuild -scheme PragueOAPISwiftUI -sdk "iphonesimulator"
   tests:
     name: Tests
-    runs-on: macos-13
+    runs-on: macos-14
     steps:
       - uses: actions/checkout@v4
       - name: Tests
         run: |
-          sudo xcode-select -s /Applications/Xcode_15.2.app
-          xcodebuild test -scheme PragueOAPISwiftUI -destination "name=iPhone 13 Pro Max" -resultBundlePath "Tests.xcresult" -testPlan PragueOAPISwiftUI
+          sudo xcode-select -s /Applications/Xcode_15.3.app
+          xcodebuild test -scheme PragueOAPISwiftUI -destination "name=iPhone 13 Pro Max" -resultBundlePath "Tests.xcresult"
