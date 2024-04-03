@@ -10,7 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build
-        run: xcodebuild -scheme PragueOAPISwiftUI -sdk "iphonesimulator"
+        run: |
+        xcode-select -s /Applications/Xcode_15.3.app
+        xcodebuild -scheme PragueOAPISwiftUI -sdk "iphonesimulator"
   tests:
     name: Tests
     runs-on: macos-14
@@ -18,5 +20,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: Tests
         run: |
+          xcode-select -s /Applications/Xcode_15.3.app
           xcrun simctl create "iPhone 13 Pro Max" "iPhone 13 Pro Max"
           xcodebuild test -scheme PragueOAPISwiftUI -destination "name=iPhone 13 Pro Max" -resultBundlePath "Tests.xcresult"
