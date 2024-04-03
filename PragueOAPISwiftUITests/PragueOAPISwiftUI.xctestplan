@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "67B12104-3BC4-415E-A2BF-B67F487D359F",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:PragueOAPISwiftUI.xcodeproj",
+      "identifier" : "973E01572B9380AC0095396F",
+      "name" : "PragueOAPISwiftUI"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:PragueOAPISwiftUI.xcodeproj",
+        "identifier" : "97BEBD4B2BA07BE40078EAC3",
+        "name" : "PragueOAPISwiftUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
