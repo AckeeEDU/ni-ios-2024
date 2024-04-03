@@ -10,4 +10,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build
-        run: xcodebuild -scheme PragueOAPISwiftUI -destination "iPhone 15 Pro Max"  
+        run: xcodebuild -scheme PragueOAPISwiftUI -destination "name=iPhone 15 Pro Max"
